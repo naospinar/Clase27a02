@@ -1,0 +1,8 @@
+{
+  "name": "LectorQR",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "b3c22afa"
+}
