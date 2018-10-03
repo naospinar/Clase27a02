@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { GuardadosPage, MapaPage } from '../pages/index.paginas';
 // plugins
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { HistorialService } from '../providers/historial/historial';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     StatusBar,
     SplashScreen,
     BarcodeScanner,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    InAppBrowser,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    HistorialService    
   ]
 })
 export class AppModule {}
